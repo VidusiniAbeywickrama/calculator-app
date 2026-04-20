@@ -1,0 +1,19 @@
+{
+  "name": "simple-calculator",
+  "version": "1.0.0",
+  "description": "Simple Node.js calculator with CLI and frontend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node index.js"
+  },
+  "keywords": [
+    "calculator",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
