@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Simple Calculator</h1>
+      <p>Perform addition, subtraction, multiplication, and division.</p>
+
+      <form id="calculator-form" class="calculator-form">
+        <label>
+          First Number
+          <input id="first-number" type="number" step="any" required />
+        </label>
+
+        <label>
+          Operation
+          <select id="operation" required>
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (-)</option>
+            <option value="multiply">Multiplication (*)</option>
+            <option value="divide">Division (/)</option>
+            <option value="sqrt">Square Root (sqrt, √)</option>
+          </select>
+        </label>
+
+        <label>
+          Second Number
+          <input id="second-number" type="number" step="any" required />
+        </label>
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      <p id="result" class="result"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
