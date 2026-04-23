@@ -18,8 +18,16 @@ function calculate(operation, a, b) {
         throw new Error("Cannot divide by zero.");
       }
       return a / b;
+    case "sqrt":
+    case "squareroot":
+    case "square-root":
+    case "√":
+      if (a < 0) {
+        throw new Error("Cannot calculate square root of a negative number.");
+      }
+      return Math.sqrt(a);
     default:
-      throw new Error("Invalid operation. Use add, subtract, multiply, or divide.");
+      throw new Error("Invalid operation. Use add, subtract, multiply, divide, or sqrt.");
   }
 }
 
